@@ -10,7 +10,7 @@ CRUD Operations for Recipes:
 Create, Read, Update, and Delete recipes.
 MongoDB Database: Recipes and user data stored with proper schema design.
 
-Error Handling: Structured error handling for invalid requests and server errors.
+Error Handling: Proper error handling for this Recipe management App
 
 Prerequisites:-
 create a .env file for environment variables with jwt or mongodb etc.
@@ -22,20 +22,20 @@ The server should now be running at http://localhost:8000.
 API Endpoints :-
 
 Register a new user :- POST route ---  http://localhost:8000/user/signup
-Login :- Create POST Route  ---   http://localhost:8000/user/login
+Login user :- Create POST Route  ---   http://localhost:8000/user/login
 
 Recipe CRUD Endpoints:-
 
-Create a Recipe :-  create a POST route --   http://localhost:8000/Recipe/create
+Create a Recipe :-  create a POST route --    http://localhost:8000/Recipe/create
 Requires JWT token in the Authorization header.
 
-Get All Recipes :-  create GET Route  --   http://localhost:8000/Recipe/AllRecipe.
+Get All Recipes :-  create GET Route  ---     http://localhost:8000/Recipe/AllRecipe.
 
-Get a Recipe by ID :- create GET Route --   http://localhost:8000/Recipe/SingleRecipe/:id.
+Get a Recipe by ID :- create GET Route ---    http://localhost:8000/Recipe/SingleRecipe/:id.
 
 Update a Recipe :- create Patch / Put Route --  http://localhost:8000/Recipe/UpdateRecipe/:id.
 
-Delete a Recipe :- create Delete Route --  http://localhost:8000/Recipe/DeleteRecipe/:id.
+Delete a Recipe :- create Delete Route ---    http://localhost:8000/Recipe/DeleteRecipe/:id.
 
 Error Handling :-
 400: Invalid or malformed request.
